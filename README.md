@@ -5,9 +5,9 @@ This is a fork of the [outlook-calendar-sync](https://github.com/MShekow/outlook
 
 **This Outlook <-> Google sync flow is still in an early stage and not well-tested yet!!**
 
-Download the zip archive from here TODO.
+Download the zip archive from [here](https://github.com/MShekow/outlook-google-calendar-sync/raw/main/Outlook%20Google%20calendar%20sync%20v0.8.zip).
 
-If you want to get rid of all blocker events, you can use this TODO helper PowerAuto flow.
+If you want to get rid of all blocker events, you can use [this](https://github.com/MShekow/outlook-google-calendar-sync/raw/main/Delete%20SyncBlocker%20events.zip) helper PowerAuto flow.
 
 ## Limitations
 
