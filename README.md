@@ -18,6 +18,7 @@ The Google calendar API (and/or the corresponding Power Automate action) has var
 - The Google APIs do not seem to expose the _visibility_ (e.g. public, private), _response type_ (e.g. tentative), _reminders_, or the _show as_ (busy, free) attributes. Thus, we cannot synchronize them to Outlook. Conversely, we also cannot set these attributes when creating/updating Google calendar events.
 - The Google APIs do not expose the _timezone_ of the events, thus we always set UTC for Outlook calendar events.
 - The Google APIs do not expose the _color_ that you can assign to events in the Google calendar web interface or app.
+- The _location_ field value is not synchronized, because the synchronization algorithm uses it to correlate events, i.e., the ID of the source event is stored in the location of the target / SyncBlocker event.
 
 Some limitation details are also discussed in the [implementation notes](implementation-notes.md).
 
