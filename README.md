@@ -3,7 +3,7 @@ A Microsoft Power Automate flow to synchronize an Outlook 365 with a Google cale
 
 This is a fork of the [outlook-calendar-sync](https://github.com/MShekow/outlook-calendar-sync) project, which synchronizes two Outlook 365 calendars.
 
-**This Outlook <-> Google sync flow is still in an early stage and not well-tested yet!!**
+**Note: this Outlook <-> Google sync flow is not battle-tested yet!!**
 
 Download the zip archive from [here](https://github.com/MShekow/outlook-google-calendar-sync/raw/main/Outlook%20Google%20calendar%20sync%20v0.8.zip).
 
@@ -17,7 +17,7 @@ The Google calendar API (and/or the Power Automate action) has various limitatio
 - The Google APIs do not expose the _timezone_ of the events, thus we always set UTC for Outlook calendar events.
 - The Google APIs do not expose the _color_ that you can assign to events in the Google calendar web interface or app.
 
-Some limitations are also discussed in the [implementation notes](implementation-notes.md).
+Some limitation details are also discussed in the [implementation notes](implementation-notes.md).
 
 ## Change log
 
