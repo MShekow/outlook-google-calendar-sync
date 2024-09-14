@@ -26,6 +26,11 @@ Some limitation details are also discussed in the [implementation notes](impleme
 
 ### v0.9 (2024-03-02)
 
+> [!IMPORTANT]
+> v0.9 introduces **major** changes to the synchronization core logic. The main new feature is that the _location_ field is now synchronized. However, running _multiple parallel_ flows (to synchronize more than two calendars) is _no longer supported_! Please carefully read the points below for more details.
+>
+> v0.9 of the flow also consumes a few more actions than v0.8, thus you might reach your daily quota/limit more quickly. If you don't have a strong need to synchronize the location field (or if you want to synchronize more than two calendars), you should stay on v0.8 or older!
+
 * **WARNING**: if you are upgrading from 0.8 or older, **you must first run the _Delete SyncBlocker events_ flow** to delete all old SyncBlocker events. You must run the _Delete SyncBlocker events_ flow once for every calendar that is affected by your v0.8 (or older) synchronization flow.
   * Note: the zip archive of the _Delete Syncblocker events_ flow has been updated, so that it can delete SyncBlocker events created with v0.9 or newer. If you run into problems with v0.9 and want to revert to v0.8, make sure that you download the new version of the _Delete SyncBlocker events_ flow (and **re**-import it in case you already had the old version), to properly clean your SyncBlocker events.
 * The _location_ field is now synchronized. In v0.8 and older, the location field of the SyncBlocker events used to store the ID of the source event. In v0.9, that ID is now stored in a fake email address in the first required _attendee_ of the SyncBlocker event. Make sure not to delete this attendee!
