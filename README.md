@@ -1,4 +1,8 @@
 # outlook-google-calendar-sync
+
+> [!IMPORTANT]
+> This Power Automate flow is no longer maintained. It has been superseded by [this Next-Generation flow](https://github.com/MShekow/ng-outlook-google-calendar-sync/).
+
 A Microsoft Power Automate flow to synchronize an Outlook 365 with a Google calendar.
 
 In contrast to Desktop solutions such as https://www.outlookgooglecalendarsync.com, this solution runs in the cloud and does not require a Desktop PC to be running.
